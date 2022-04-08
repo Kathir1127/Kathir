@@ -1,0 +1,139 @@
+main.html: 
+<html> 
+<head> 
+<title> railway registration</title> 
+</head> 
+<frameset rows="10%,*"> 
+<frame src="online.html"/> 
+<frameset cols="10%,*"/> 
+<frame src="left.html" name="left"/> 
+<frame src="right.html"name="right"/> 
+</frameset> 
+</frameset> 
+</html> 
+right.html: 
+<html> 
+<head> 
+<title> right frame</title> 
+<style> 
+body{ 
+background-image:url("http://www.tmr.qld.gov.au/-
+/media/Projects/N/New-Generation-Rollingstock/rollout/trainside.jpg?la=en"); background-size:cover; 
+} 
+</style> 
+</head> 
+<body> 
+</body> 
+</html> 
+left.html: 
+<html> 
+<head> 
+<title> left frame</title> 
+</head> 
+<body> 
+<a href="ticketbooking.html" target="right"> Book Ticket </a><br/> 
+<a href="checkavailability.html" target="right"> Check Availability </a><br/> 
+</body> 
+</html> 
+online.html: 
+<html> 
+<div> 
+<image src="C:\Users\deepi\Downloads\logo.jpg" height="50" width="50"/> 
+<center> 
+<h1> ONLINE RAILWAY RESERVATION BOOKING </h1> 
+</div> 
+</html> 
+ticketbooking.html: 
+<html> 
+<head> 
+<title> tic booking </title> 
+<style> th,td { font-size:25px; 
+} 
+</style> <script> function fun1(){ 
+var x=document.getElementById("from1").value; var 
+y=document.getElementById("to1").value; var 
+z=document.getElementById("passenger").value; if(z=="") { 
+alert("enter number of passengers"); return false; 
+} 
+if(z>0&&z<=5) 
+{ 
+document.getElementById("a").innerHTML="your ticket from "+x+" to "+y+" 
+confirmed. "; 
+} else { 
+alert("tickets not available" ); 
+}} 
+</script> 
+</head> 
+<body> 
+<form> 
+<table border="1" align="center" cellpadding="10" cellspacing="5" > 
+<tr> 
+<td>From</td> 
+<td><input type="text" id="from1" required /></td> 
+</tr> 
+<tr> 
+<td>To</td> 
+<td><input type="text" id="to1" required /></td> 
+</tr> 
+<tr> 
+<td>Train Name</td> 
+<td> 
+<Select name="dropdown" required> 
+<option value="sabari" >SABARI</option> 
+<option value="venkatadri">CHENNAI</option> 
+<option value="narayanadri" >BANGALORE</option></select></td> 
+</tr> 
+<tr> 
+<td>Couch Number</td> 
+<td> 
+<Select required> 
+<option value="s1" > S1 </option> 
+<option value="s2"> S2</option> 
+<option value="s3" > S3 </option></select></td> 
+</tr> 
+<tr> 
+<td>Date</td> 
+<td><input type="Date" name="Date" required /></td> 
+</tr> 
+<tr> 
+<td>Timing</td> 
+<td><input type="text" name="Timming" required /></td> 
+</tr> 
+<tr> 
+<td>Gender</td> 
+<td> 
+<Select name="dropdown" required > 
+<option value="male" > Male </option> 
+<option value="female"> Female </option> 
+</select></td> 
+</tr> 
+<tr> 
+<td>No of passenger</td> 
+<td><input type="text" id="passenger" required /></td> 
+</tr> 
+<tr align="center"> 
+<td colspan="2"> 
+<input type="submit" name="Submit" value="submit"/> 
+<input type="reset" name="Reset" value="reset"/> 
+</td> 
+</tr> 
+</table> 
+</form> 
+<button onclick="fun1()" style="margin-left:650px" 
+>Confirm</button><br/><br/> 
+<p id="a"></p> 
+</body> 
+</html> 
+checkavailability.html: 
+<html> 
+<head> 
+<title>frame</title> 
+</head> 
+<body> 
+<img src= "C:\Users\deepi\Downloads\logo.jpg"width="50px" height="50px" 
+style="float:left;"/> <p> 
+To check the availability of train please select the train name and number of 
+passengers in <a 
+href="ticketbooking.html"> Ticket booking</a></p> 
+</body> 
+</html>

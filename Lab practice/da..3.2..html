@@ -1,0 +1,74 @@
+<html> 
+<head> 
+<title>Kathir</title>
+</head>
+<script> function validate() 
+{ 
+var n=document.getElementById("name").innerHTML; var 
+t=document.getElementById("toppings").innerHTML; var 
+s=document.getElementById("sauce").checked; var 
+b=document.getElementById("base").checked; var 
+i=document.getElementById("delivery instructions").innerHTML; 
+if(n == 0){ alert("Name field is Empty");} if(t == 0){ 
+alert("select the toppings");} if (s == 0){ 
+alert("select the sauce");} 
+if (b == 0){ alert("select the type of base required");} 
+if (i == 0){ alert("text should be filled "); 
+} 
+} 
+</script> 
+<title> pizza shop 2.0 </title> 
+<style> 
+body{ 
+background:red 
+url("https://sp.yimg.com/ib/th?id=OP.PimU5R8avWhCJA474C474&o=5&pid
+=21.1&bw=0&bc=FFFFFF&w=174&h=174")no-repeat fixed; 
+background-size:cover; 
+</style> 
+</head> 
+<body> 
+<form name="pizza" onsubmit=" validate();"> 
+<table align="center" border="1" width="25%" height="25%"> 
+<tr> 
+<th colspan="2">PIZZA SHOP 2.0 </th> 
+</tr> 
+<tr> 
+<td align="left" ; >Name</td> 
+<td><input type="text" name="name" id="name"></td> 
+</tr> 
+<tr> 
+<td align ="left">Pizza Topping</td> 
+<td><input type="radio" name="supreme" id ="toppings">supreme</br> 
+<input type="radio" name="vegetarian" id="toppings">vegitarian</br> 
+<input type="radio" name="hawaaian" id="toppings">hawaiaain</br></td> 
+</tr> 
+<tr> 
+<td align="left"> Pizza sauce</td> 
+<td > 
+<select name ="dropdown"> 
+<option value="tomato" selected id ="sauce">tomato</option> 
+<option value="carrot" selected id ="sauce">carrot</option> 
+</select> 
+</td> 
+</tr> 
+<tr> 
+<td align="left" > Optional extras</td> 
+<td><input type="checkbox" name="extra cheese" id="base">extra cheese 
+<input type="checkbox" name="gluten Free Baes" id ="base">gluten free base 
+</td> 
+</tr> 
+<tr> 
+<td colspan="2" >Delivery Instructions: <br/><textarea name="Delivery 
+Instructions" id="delivery instructions"> 
+</textarea> 
+</td> 
+</tr> 
+<tr> 
+<td colspan="2"> 
+<button> Send my order</button> 
+</td> 
+</tr> 
+</table> 
+</form> 
+</body> 
+</html>
